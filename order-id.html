@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retoza - Restaurant Dashboard</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- bootsrtap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- all css -->
+    <link rel="stylesheet" href="css/all.css">
+    <!-- slick css -->
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- metisMenu css -->
+    <link rel="stylesheet" href="css/metisMenu.css">
+    <!-- lineProgressbar css -->
+    <link rel="stylesheet" href="css/jquery.lineProgressbar.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- responsive fonts -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <!-- left-sidebar start -->
+    <aside>
+        <div class="left-sidebar">
+            <div class="logo-area">
+                <div class="main-logo">
+                    <a href="index.html"><img src="images/retoja.png" alt="images" /></a>
+                </div>
+            </div>
+            <div class="sidebar-menu">
+                <ul  id="metismenu">
+                    <li>
+                        <a href="index.html">
+                            <img src="images/menu-img-1.png" alt="images">
+                            <span>Deshboard</span>
+                        </a>
+                    </li>
+                    <li class="mm-active active">
+                        <a class="has-arrow" href="#" >
+                            <img src="images/menu-img-2.png" alt="images">
+                            <span>Orders</span>
+                        </a>
+                        <ul>
+                            <li><a href="order-list.html">Order list</a></li>
+                            <li class="s-active"><a href="order-id.html">Order ID</a></li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a class="has-arrow" href="#">
+                            <img src="images/menu-img-3.png" alt="images">
+                            <span>Menus</span>
+                        </a>
+                        <ul>
+                            <li><a href="add-menu.html">Add Menu</a></li>
+                            <li><a href="menu-list.html">Menu List</a></li>
+                            <li><a href="catagories.html">Categories</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" >
+                            <img src="images/menu-img-4.png" alt="images">
+                            <span>Customer</span>
+                        </a>
+                        <ul>
+                            <li><a href="customer-list.html">Coustomer List</a></li>
+                            <li><a href="review.html">Reviwe</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="analytics.html" >
+                            <img src="images/menu-img-5.png" alt="images">
+                            <span>Analytics</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="has-arrow" href="#" >
+                            <img src="images/menu-img-6.png" alt="images">
+                            <span>Table</span>
+                        </a>
+                        <ul>
+                            <li ><a href="add-table.html">Add Table</a></li>
+                            <li><a href="table-list.html">Table List</a></li>
+                            <li><a href="table-id.html">Table ID</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="add-menu">
+                <div class="add-box">
+                    <div class="title">
+                        <h4>Favourite Add Menus</h4>
+                        <p>It is a long established</p>
+                    </div>
+                    <div class="add-img">
+                        <img src="images/add-menu-img.png" alt="images" />
+                    </div>
+                    <a href="#" class="add">
+                        <i class="fas fa-plus"></i>
+                        <span>Add Menu</span>
+                    </a>
+                </div>
+                <div class="add-text">
+                    <h5>Retoza Restaurant Admin </h5>
+                    <p>2021 All Rights</p>
+                </div>
+                <div class="author-text">
+                    <p>Made with by <i class="fas fa-heart"></i> Zainiklab</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <!-- left-sidebar end -->
+    <!-- top-bar start -->
+    <header>
+        <div class="top-area">
+            <div class="container-fluid">
+                <div class="row">
+                        <div class="toogle-bar">
+                            <span id="toggle"><i class="fas fa-bars"></i></span>
+                        </div>
+                    <div class="offset-lg-5 col-lg-7 text-right">
+                        <div class="search-bar">
+                            <form action="#">
+                                <input type="text" placeholder="Search here">
+                                <button type="submit"><img src="images/search-icon.png" alt="images" /></button>
+                            </form>                            
+                        </div>
+                        <a href="#" class="notification">
+                            <div class="icon">
+                                <img src="images/notification-icon.png" alt="images" />
+                            </div>
+                            <div class="number">
+                                <span>5</span>
+                            </div>
+                        </a>
+                        <a href="#" class="notification">
+                            <div class="icon">
+                                <img src="images/chat-icon.png" alt="images" />
+                            </div>
+                            <div class="number">
+                                <span>5</span>
+                            </div>
+                        </a>
+                        <div class="profile">
+                            <div class="name">
+                                <p>Hello, Lojusa</p>
+                            </div>
+                            <div class="profile-img">
+                                <img src="images/profile-img.png" alt="images">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- top-bar end -->
+    <!-- main-content start -->
+    <div class="main-content">
+        <div class="order-id-content">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="page-title">
+                            <div class="title">
+                                <h3>Order ID #5552351</h3>
+                                <p>Dashboard / Order Details</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="order-id-details">
+                            <div class="table-responsive">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <div class="circle"></div>
+                                        </th>
+                                        <th>
+                                            <div class="circle"></div>
+                                        </th>
+                                        <th>
+                                            <div class="circle"></div>
+                                        </th>
+                                        <th>
+                                            <div class="circle"></div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <h5>Order Created</h5>
+                                            <span>Thu, 21 jul 2020</span>
+                                        </td>
+                                        <td>
+                                            <h5>Payment Succcess</h5>
+                                            <span>Thu, 21 jul 2020</span>
+                                        </td>
+                                        <td>
+                                            <h5>On Delivery</h5>
+                                            <span>Thu, 21 jul 2020</span>
+                                        </td>
+                                        <td>
+                                            <h5>Order Delivered</h5>
+                                            <span>Thu, 21 jul 2020</span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="order-map">
+                            <div class="map-img">
+                                <img src="images/order-map-img.png" alt="images" />
+                            </div>
+                        </div>
+                        <div class="order-id-list">
+                            <div class="table-responsive">
+                                <table>
+                                    <tr>
+                                        <th>Items</th>
+                                        <th>Oty</th>
+                                        <th>Price</th>
+                                        <th>Total Price</th>
+                                        <th>Clear</th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="items">
+                                                <div class="item-img">
+                                                    <img src="images/order-id-list-img-1.png" alt="images" />
+                                                </div>
+                                                <div class="item-name">
+                                                    <h5>Sweet cheezy pizza for kids<br />Meal (smail )</h5>
+                                                    <div class="review">
+                                                        <div class="icon">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span>(45)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>1x</p>
+                                        </td>
+                                        <td>
+                                            <p>$12.5</p>
+                                        </td>
+                                        <td>
+                                            <p>$456</p>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="items">
+                                                <div class="item-img">
+                                                    <img src="images/order-id-list-img-2.png" alt="images" />
+                                                </div>
+                                                <div class="item-name">
+                                                    <h5>Sweet cheezy pizza for kids<br />Meal (smail )</h5>
+                                                    <div class="review">
+                                                        <div class="icon">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span>(45)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>3x</p>
+                                        </td>
+                                        <td>
+                                            <p>$12.5</p>
+                                        </td>
+                                        <td>
+                                            <p>$456</p>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="items">
+                                                <div class="item-img">
+                                                    <img src="images/order-id-list-img-3.png" alt="images" />
+                                                </div>
+                                                <div class="item-name">
+                                                    <h5>Sweet cheezy pizza for kids<br />Meal (smail )</h5>
+                                                    <div class="review">
+                                                        <div class="icon">
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                            <i class="fas fa-star"></i>
+                                                        </div>
+                                                        <span>(45)</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <p>5x</p>
+                                        </td>
+                                        <td>
+                                            <p>$12.5</p>
+                                        </td>
+                                        <td>
+                                            <p>$456</p>
+                                        </td>
+                                        <td>
+                                            <div class="delete">
+                                                <a href="#"><i class="far fa-trash-alt"></i></a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="customer">
+                            <div class="customer-profile">
+                                <div class="customer-img">
+                                    <img src="images/customer-img.png" alt="images" />
+                                </div>
+                                <div class="customer-name">
+                                    <h5>Darlene Robertson</h5>
+                                    <a href="#">Customer</a>
+                                </div>
+                                <div class="customer-adress">
+                                    <div class="single-address">
+                                        <div class="address-icon">
+                                            <img src="images/address-icon-1.png" alt="images" />
+                                        </div>
+                                        <div class="address">
+                                            <p>Parker Rd. 12Allentown, New</p>
+                                            <span>02 Items</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="customer-note">
+                                <div class="note-heading">
+                                    <div class="title">
+                                        <h5>Note Order</h5>
+                                    </div>
+                                    <div class="note-icons">
+                                        <i class="fas fa-edit"></i>
+                                        <i class="fas fa-trash-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="note-text">
+                                    <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil</p>
+                                </div>
+                            </div>
+                            <div class="customer-note-address">
+                                <div class="icon">
+                                    <img src="images/note-address-icon.png" alt="images" />
+                                </div>
+                                <p> Parker Rd. Allentown, New</p>
+                            </div>
+                        </div>
+                        <div class="order-summery-chart">
+                            <div class="title">
+                                <h5>Order Summary</h5>
+                            </div>
+                            <div class="pie-chart">
+                                <canvas id="myChart" width="400" height="158"></canvas>
+                            </div>
+                            <div class="progress-bars">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p>Piza (40%)</p>
+							            <div id="piza" ></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>Dessert (50%)</p>
+							            <div id="Dessert" ></div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p>juice (80%)</p>
+							            <div id="juice" ></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- main-content end -->
+
+    <!-- jquery js -->
+    <script src="js/jquery.js"></script>
+    <!-- bootstrap min js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- bootstrap.bundle js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- metisMenu js -->
+    <script src="js/metisMenu.js"></script>
+    <!-- lineProgressbar js -->
+    <script src="js/jquery.lineProgressbar.js"></script>
+    <!-- canvasjs js -->
+    <script src="js/jquery.canvasjs.min.js"></script>
+    <!-- Chart js -->
+    <script src="js/Chart.min.js"></script>
+    <!-- slick js -->
+    <script src="js/slick.min.js"></script>
+    <!-- main js -->
+    <script src="js/main.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart');
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+             datasets: [{
+                  data: [40,50,30],
+                  backgroundColor: [
+                       '#634FD2',
+                       '#FFA41D',
+                       '#72C1E2',
+                  ],
+                  hoverBorderWidth: 0,
+             }]
+        },
+        options: {
+             backgroundColor: "red",
+             legend: {
+                display: false,
+                labels: {
+                    fontColor: '#ffffff'
+                }
+            },
+             scales: {
+                  xAxes: [{
+                       stacked: true,
+                       gridLines: {
+                            display: false,
+                       },
+                       ticks: {
+                            beginAtZero: true
+                       }
+                  }],
+                  yAxes: [{
+                      display: false,
+                       gridLines: {
+                            display: false,
+                       },
+                       stacked: true
+                  }]
+             },
+             tooltips: {
+                  backgroundColor: "#000000",
+                  titleFontFamily: "Tahoma",
+                  titleFontSize: 24,
+                  titleFontStyle:"blod",
+                  titleFontColor: "white",
+                  titleAlign: "center",
+                  titleSpacing: 5,
+                  titleMarginBottom: 10,
+                  bodyFontFamily: "Tahoma",
+                  bodyFontSize: 14,
+                  bodyFontColor: "white",
+                  bodyAlign: "center",
+                  xPadding: 15,
+                  yPadding: 15,
+                  
+             }
+        }
+        });
+   </script>
+    
+</body>
+</html>
